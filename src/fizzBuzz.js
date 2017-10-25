@@ -1,6 +1,7 @@
+const FIZZ = "Fizz"
 function show(number){
     if(number %3 == 0){
-        return "Fizz"
+        return FIZZ
     }
 
     if(number %5 == 0){
@@ -10,4 +11,7 @@ function show(number){
     return number.toString()
 }
 
-module.exports = show
+module.exports = { 
+    show : show, 
+    FIZZ : FIZZ
+}
