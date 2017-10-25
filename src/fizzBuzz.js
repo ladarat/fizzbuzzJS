@@ -2,7 +2,7 @@ const FIZZ = "Fizz"
 const BUZZ = "Buzz"
 
 function show(number){
-    if(number %3 == 0){
+    if(isFizz(number)){
         return FIZZ
     }
 
@@ -11,6 +11,10 @@ function show(number){
     }
 
     return number.toString()
+}
+
+function isFizz(number){
+    return number %3 == 0
 }
 
 module.exports = { 
